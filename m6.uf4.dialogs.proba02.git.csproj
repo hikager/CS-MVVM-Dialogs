@@ -83,6 +83,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Behaviors\DialogBehavior.cs" />
+    <Compile Include="ViewModel\DialogWindowViewModel.cs" />
     <Compile Include="ViewModel\IDialogViewModel.cs" />
     <Compile Include="ViewModel\IUserDialogViewModel.cs" />
     <Compile Include="ViewModel\MainWindowViewModel.cs" />
