@@ -11,9 +11,9 @@
         <ViewModel:MainWindowViewModel/>
     </Window.DataContext>
     <Grid>
-        <TextBox HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="61" Margin="128,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="497" FontSize="20"/>
-        <Button Content="Modal" HorizontalAlignment="Left" Margin="128,220,0,0" VerticalAlignment="Top" Width="163" Height="55" FontSize="20" FontWeight="Bold"/>
-        <Button Content="Non-Modal" HorizontalAlignment="Left" Margin="462,220,0,0" VerticalAlignment="Top" Width="163" Height="55" FontSize="20" FontWeight="Bold"/>
+        <TextBox  HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="61" Margin="128,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="497" FontSize="20" Text="{Binding Text}"/>
+        <Button Command="{Binding BtnCommand, Mode=OneWay}" CommandParameter="True" Content="Modal" HorizontalAlignment="Left" Margin="128,220,0,0" VerticalAlignment="Top" Width="163" Height="55" FontSize="20" FontWeight="Bold"/>
+        <Button  Command="{Binding BtnCommand, Mode=OneWay}" CommandParameter="True" Content="Non-Modal" HorizontalAlignment="Left" Margin="462,220,0,0" VerticalAlignment="Top" Width="163" Height="55" FontSize="20" FontWeight="Bold"/>
 
     </Grid>
 
