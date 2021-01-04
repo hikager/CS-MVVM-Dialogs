@@ -6,8 +6,15 @@
         xmlns:local="clr-namespace:m6.uf4.dialogs.proba02.git"
         xmlns:ViewModel="clr-namespace:m6.uf4.dialogs.proba02.git.ViewModel" x:Class="m6.uf4.dialogs.proba02.git.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MVVM  WPF - Using dialogs" Height="450" Width="747.5">
     <Window.DataContext>
         <ViewModel:MainWindowViewModel/>
     </Window.DataContext>
+    <Grid>
+        <TextBox HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="61" Margin="128,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="497" FontSize="20"/>
+        <Button Content="Modal" HorizontalAlignment="Left" Margin="128,220,0,0" VerticalAlignment="Top" Width="163" Height="55" FontSize="20" FontWeight="Bold"/>
+        <Button Content="Non-Modal" HorizontalAlignment="Left" Margin="462,220,0,0" VerticalAlignment="Top" Width="163" Height="55" FontSize="20" FontWeight="Bold"/>
+
+    </Grid>
+
 </Window>
