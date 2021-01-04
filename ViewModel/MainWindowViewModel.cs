@@ -27,14 +27,26 @@ namespace m6.uf4.dialogs.proba02.git.ViewModel
         //Dialog list container
         private ObservableCollection<IDialogViewModel> _dialogList = new ObservableCollection<IDialogViewModel>();
         public ObservableCollection<IDialogViewModel> DialogList { get { return _dialogList; } }
-
+        
+        // windows dialog counter
+        private int windowsNumeber = 0; 
         #endregion
 
 
         #region commands for view buttons logic
 
         public ICommand BtnCommand => new RelayCommand<string>(NewDialog);
-        public void NewDialog(string isModal) { }
+        public void NewDialog(string isModal)
+        {
+            //Constructor with all the implementations within
+            this.DialogList.Add(new DialogWindowViewModel()
+            {
+                IsModal = (isModal == "True"),
+                Titol = $"Dialog [{this.windowsNumeber++}] - Type [{(isModal == "True" ? "Modal" : "Non-Modal")}]",
+                Text2 = Text //text dialog will get/grab the main view text  and will be set on it's own textbox.
+
+            });;
+        }
 
         #endregion
 
