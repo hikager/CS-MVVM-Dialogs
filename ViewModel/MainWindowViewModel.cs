@@ -34,9 +34,9 @@ namespace m6.uf4.dialogs.proba02.git.ViewModel
         //Dialog list container
         private ObservableCollection<IDialogViewModel> _dialogList = new ObservableCollection<IDialogViewModel>();
         public ObservableCollection<IDialogViewModel> DialogList { get { return _dialogList; } }
-        
+
         // windows dialog counter
-        private int windowsNumeber = 0; 
+        private int windowsNumeber = 0;
         #endregion
 
 
@@ -50,9 +50,30 @@ namespace m6.uf4.dialogs.proba02.git.ViewModel
             {
                 IsModal = (isModal == "True"),
                 Title = $"Dialog [{this.windowsNumeber++}] - Type [{(isModal == "True" ? "Modal" : "Non-Modal")}]",
-                Text2 = Text //text dialog will get/grab the main view text  and will be set on it's own textbox.
+                Text2 = Text, //text dialog will get/grab the main view text  and will be set on it's own textbox.
+                OnOk = (sender) =>
+                {
+                    Text = sender.Text2;
+                    TextColor = "LightGreen";
 
-            });;
+                    //Each time we "drop/quit" a dialog we need to do the same for the window's counter.
+                    this.windowsNumeber--;
+                },
+                OnCancel = (sender) =>
+                {
+                    TextColor = "Red";
+
+                    this.windowsNumeber--;
+                },
+                OnCloseRequest = (sender) =>
+                {
+                    TextColor = "LightGray";
+
+                    this.windowsNumeber--;
+                }
+
+
+            }); ;
         }
 
         #endregion
