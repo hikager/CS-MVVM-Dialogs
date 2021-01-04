@@ -12,13 +12,13 @@ namespace m6.uf4.dialogs.proba02.git.ViewModel
     public class DialogWindowViewModel : INotifyPropertyChanged, IUserDialogViewModel
     {
         #region propietats
-        private string _titol;
-        public string Titol
+        private string _title;
+        public string Title
         {
-            get { return _titol; }
+            get { return _title; }
             set
             {
-                _titol = value;
+                _title = value;
                 NotifyPropertyChanged();
             }
         }

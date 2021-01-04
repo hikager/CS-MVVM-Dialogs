@@ -42,7 +42,7 @@ namespace m6.uf4.dialogs.proba02.git.ViewModel
             this.DialogList.Add(new DialogWindowViewModel()
             {
                 IsModal = (isModal == "True"),
-                Titol = $"Dialog [{this.windowsNumeber++}] - Type [{(isModal == "True" ? "Modal" : "Non-Modal")}]",
+                Title = $"Dialog [{this.windowsNumeber++}] - Type [{(isModal == "True" ? "Modal" : "Non-Modal")}]",
                 Text2 = Text //text dialog will get/grab the main view text  and will be set on it's own textbox.
 
             });;

@@ -6,9 +6,9 @@
         xmlns:local="clr-namespace:m6.uf4.dialogs.proba02.git.View"
         xmlns:ViewModel="clr-namespace:m6.uf4.dialogs.proba02.git.ViewModel" x:Class="m6.uf4.dialogs.proba02.git.View.DialogWindow"
         mc:Ignorable="d"
-        Title="DialogWindow" Height="347.812" Width="494.375">
+        Title="{Binding Title}" Height="347.812" Width="494.375">
     <Window.DataContext>
-        <ViewModel:MainWindowViewModel/>
+        <ViewModel:DialogWindowViewModel/>
     </Window.DataContext>
     <Grid/>
 </Window>
