@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:m6.uf4.dialogs.proba02.git"
         xmlns:ViewModel="clr-namespace:m6.uf4.dialogs.proba02.git.ViewModel" x:Class="m6.uf4.dialogs.proba02.git.MainWindow"
-        mc:Ignorable="d"
+       xmlns:dlgs="clr-namespace:MvvmDialogs.Behaviors"
+    dlgs:DialogBehavior.DialogViewModels="{Binding DialogList}"    
+    mc:Ignorable="d"
         Title="MVVM  WPF - Using dialogs" Height="450" Width="747.5">
     <Window.DataContext>
         <ViewModel:MainWindowViewModel/>
