@@ -2,8 +2,25 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:m6.uf4.dialogs.proba02.git"
+           
+             xmlns:View="clr-namespace:m6.uf4.dialogs.proba02.git.View"
+             xmlns:ViewModel="clr-namespace:m6.uf4.dialogs.proba02.git.ViewModel"   
+             
              StartupUri="View/MainWindow.xaml">
     <Application.Resources>
-         
+        <View:DialogWindow x:Key="{x:Type ViewModel:DialogWindowViewModel}" x:Shared="False" />
     </Application.Resources>
 </Application>
+
+<!--
+    1st) we need to declare the "variables" in the xaml context: 
+    
+             xmlns:View="clr-namespace:m6.uf4.dialogs.proba02.git.View"
+             xmlns:ViewModel="clr-namespace:m6.uf4.dialogs.proba02.git.ViewModel"   
+        
+    2nd) Then we use the them in the resources to "bind" the views together
+    
+   <Application.Resources>
+        <View:DialogWindow x:Key="{x:Type ViewModel:DialogWindowViewModel}" x:Shared="False" />
+    </Application.Resources>
+    -->

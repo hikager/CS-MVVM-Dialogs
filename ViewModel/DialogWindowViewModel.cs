@@ -42,7 +42,7 @@ namespace m6.uf4.dialogs.proba02.git.ViewModel
 
         public void RequestClose()
         {
-            throw new NotImplementedException();
+           //nothing yet
         }
 
         private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
