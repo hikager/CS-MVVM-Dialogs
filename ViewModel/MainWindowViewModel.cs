@@ -24,6 +24,13 @@ namespace m6.uf4.dialogs.proba02.git.ViewModel
             set { _text = value; NotifyPropertyChanged(); }
         }
 
+        private string _textColor;
+        public string TextColor
+        {
+            get { return _textColor; }
+            set { _textColor = value; NotifyPropertyChanged(); }
+        }
+
         //Dialog list container
         private ObservableCollection<IDialogViewModel> _dialogList = new ObservableCollection<IDialogViewModel>();
         public ObservableCollection<IDialogViewModel> DialogList { get { return _dialogList; } }

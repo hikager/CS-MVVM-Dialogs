@@ -11,8 +11,8 @@
         <ViewModel:DialogWindowViewModel/>
     </Window.DataContext>
     <Grid>
-        <TextBox VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="56" Margin="106,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="261" FontSize="16"/>
-        <Button Content="OK" HorizontalAlignment="Left" Margin="106,164,0,0" VerticalAlignment="Top" Width="128" Height="47" FontSize="16"/>
-        <Button Content="CANCEL" HorizontalAlignment="Left" Margin="239,164,0,0" VerticalAlignment="Top" Width="128" Height="47" FontSize="16"/>
+        <TextBox  VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="56" Margin="106,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="261" FontSize="16"/>
+        <Button Command="{Binding OkCommand}" Content="OK" HorizontalAlignment="Left" Margin="106,164,0,0" VerticalAlignment="Top" Width="128" Height="47" FontSize="16"/>
+        <Button Command="{Binding CancelCommand}" Content="CANCEL" HorizontalAlignment="Left" Margin="239,164,0,0" VerticalAlignment="Top" Width="128" Height="47" FontSize="16"/>
     </Grid>
 </Window>
