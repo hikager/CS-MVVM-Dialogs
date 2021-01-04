@@ -1,0 +1,14 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:m6.uf4.dialogs.proba02.git.View"
+        xmlns:ViewModel="clr-namespace:m6.uf4.dialogs.proba02.git.ViewModel" x:Class="m6.uf4.dialogs.proba02.git.View.DialogWindow"
+        mc:Ignorable="d"
+        Title="DialogWindow" Height="347.812" Width="494.375">
+    <Window.DataContext>
+        <ViewModel:MainWindowViewModel/>
+    </Window.DataContext>
+    <Grid/>
+</Window>
