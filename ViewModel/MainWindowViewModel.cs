@@ -1,6 +1,8 @@
 ﻿using GalaSoft.MvvmLight.Command;
+using MvvmDialogs.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -21,6 +23,10 @@ namespace m6.uf4.dialogs.proba02.git.ViewModel
             get { return _text; }
             set { _text = value; NotifyPropertyChanged(); }
         }
+
+        //Dialog list container
+        private ObservableCollection<IDialogViewModel> _dialogList = new ObservableCollection<IDialogViewModel>();
+        public ObservableCollection<IDialogViewModel> DialogList { get { return _dialogList; } }
 
         #endregion
 
